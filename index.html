@@ -1,207 +1,33 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en" class="dark">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AInvestor | AI 投研工作站</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AInvestor | 深层投资大脑 - AI 原生投资工作站</title>
     <meta
       name="description"
-      content="AInvestor 是面向早期项目筛选、尽调、投委会材料和投资判断的 AI 投研工作站。"
+      content="AInvestor 是面向投资机构的 AI 原生投资工作站，以多 Agent 协作完成项目筛选、尽调、投委会材料和投资判断。"
     />
     <link rel="canonical" href="https://ainvestor.cn/" />
-    <meta property="og:title" content="AInvestor | AI 投研工作站" />
+    <meta property="og:title" content="AInvestor | 深层投资大脑 - AI 原生投资工作站" />
     <meta
       property="og:description"
-      content="用 9 个投研 Agent 把 BP、访谈、市场、财务、法务和反对意见汇总成可追溯的投资判断。"
+      content="AInvestor Workstation uses multi-agent collaboration to turn market, technical, financial, legal and founder signals into traceable investment decisions."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ainvestor.cn/" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-kWgOkFz6.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-iwMKQSqa.css" />
   </head>
-  <body>
-    <header class="site-header" data-elevated="false">
-      <a class="brand" href="#top" aria-label="AInvestor 首页">
-        <span class="brand-mark" aria-hidden="true">AI</span>
-        <span>AInvestor</span>
-      </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#agents">Agent</a>
-        <a href="#workflow">流程</a>
-        <a href="#outputs">交付物</a>
-        <a class="nav-action" href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">进入工作站</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">AI-native investment research workstation</p>
-          <h1>AInvestor</h1>
-          <p class="hero-lede">
-            面向 VC、产业投资和创新团队的 AI 投研工作站，把项目资料、创始人访谈、市场判断、技术尽调和投委会结论组织成一条可追溯的决策链。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">进入工作站</a>
-            <a class="button secondary" href="#workflow">查看流程</a>
-          </div>
-        </div>
-
-        <div class="product-shot" aria-label="AInvestor 产品界面预览">
-          <div class="window-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-            <strong>AI 投研项目室</strong>
-          </div>
-          <div class="workspace-grid">
-            <aside class="project-rail">
-              <p class="rail-title">当前项目</p>
-              <h2>MindFlow AI</h2>
-              <div class="score">
-                <span>投资评分</span>
-                <strong>82</strong>
-              </div>
-              <ul>
-                <li class="active">BP 初筛</li>
-                <li>创始人访谈</li>
-                <li>技术尽调</li>
-                <li>投委会结论</li>
-              </ul>
-            </aside>
-            <section class="agent-panel">
-              <div class="agent-row good">
-                <span>总控 Agent</span>
-                <strong>已形成核心假设</strong>
-              </div>
-              <div class="agent-row">
-                <span>市场 Agent</span>
-                <strong>TAM 与切入点待验证</strong>
-              </div>
-              <div class="agent-row warn">
-                <span>反对派 Agent</span>
-                <strong>渠道依赖风险偏高</strong>
-              </div>
-              <div class="report-card">
-                <p>投委会摘要</p>
-                <h3>建议进入深度尽调</h3>
-                <div class="trace-line"></div>
-                <div class="trace-line short"></div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-
-      <section class="metrics" aria-label="产品能力摘要">
-        <div>
-          <strong>9</strong>
-          <span>投研 Agent</span>
-        </div>
-        <div>
-          <strong>15 min</strong>
-          <span>资料初筛节奏</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>结论可追溯</span>
-        </div>
-      </section>
-
-      <section id="agents" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Agent team</p>
-          <h2>像一支投研团队一样协作</h2>
-        </div>
-        <div class="agent-grid">
-          <article>
-            <span>01</span>
-            <h3>投资总监</h3>
-            <p>拆解核心投资问题，分派任务，统一输出投资判断。</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>市场赛道</h3>
-            <p>分析市场规模、竞争格局、切入点和增长路径。</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>技术尽调</h3>
-            <p>审视技术壁垒、工程可行性、数据资产和交付风险。</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>法务风控</h3>
-            <p>标记融资条款、知识产权、合规和交易结构风险。</p>
-          </article>
-          <article>
-            <span>05</span>
-            <h3>财务估值</h3>
-            <p>梳理收入质量、单位经济、增长效率和估值区间。</p>
-          </article>
-          <article>
-            <span>06</span>
-            <h3>反对派投资人</h3>
-            <p>主动寻找反证、脆弱假设和可能被忽略的下行场景。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="workflow" class="section band">
-        <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>从 BP 到投委会材料</h2>
-        </div>
-        <div class="timeline">
-          <div>
-            <span>1</span>
-            <h3>上传资料</h3>
-            <p>BP、访谈纪要、财务表、网页资料进入同一项目空间。</p>
-          </div>
-          <div>
-            <span>2</span>
-            <h3>Agent 分析</h3>
-            <p>每个专家基于资料生成结论、证据、风险和下一步问题。</p>
-          </div>
-          <div>
-            <span>3</span>
-            <h3>人工校准</h3>
-            <p>投资经理可以追问、重生成章节、补充证据和调整判断。</p>
-          </div>
-          <div>
-            <span>4</span>
-            <h3>形成输出</h3>
-            <p>沉淀初筛摘要、尽调报告、投委会建议和风险清单。</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="outputs" class="section outputs">
-        <div class="section-heading">
-          <p class="eyebrow">Outputs</p>
-          <h2>适合真实投研流程的交付物</h2>
-        </div>
-        <div class="output-list">
-          <a href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">
-            <span>Project workspace</span>
-            <strong>项目工作台</strong>
-          </a>
-          <a href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">
-            <span>Founder interview</span>
-            <strong>创始人访谈</strong>
-          </a>
-          <a href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">
-            <span>Investment memo</span>
-            <strong>投委会 Memo</strong>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span>AInvestor</span>
-      <a href="https://new-web-of-ainevector-651272488522.us-east1.run.app/">进入工作站</a>
-    </footer>
-
-    <script src="./script.js"></script>
+  <body class="bg-background selection:bg-primary-container/30">
+    <div id="root"></div>
   </body>
 </html>
